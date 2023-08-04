@@ -19,7 +19,7 @@ const Stopwatch = () => {
     let interval = null;
     if (isRunning) {
       interval = setInterval(() => {
-        setTime((prevTime)=>prevTime + 1);
+        setTime((time) => time + 1);
       }, 1000);
     } else if (!isRunning && time !== 0) {
       clearInterval(interval);
@@ -58,7 +58,6 @@ const Stopwatch = () => {
 
   return (
     <div className = "watch_container">
-      <div className = "inner_watch">
       <h1>React Stopwatch</h1>
       {/* display the elapsed time */}
       <p data-testid="time" className="timefont">{formattedTime()}</p>
@@ -87,7 +86,6 @@ const Stopwatch = () => {
         </button>
       )}
 
-        </div>
         </div>
     </div>
   );

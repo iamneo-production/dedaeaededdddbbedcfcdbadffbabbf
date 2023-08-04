@@ -1,4 +1,4 @@
-.button_con{
+/* .button_con{
     display:flex;
     justify-content:center;
     gap:10px;
@@ -15,5 +15,16 @@
 }
 .inner_watch{
     background-color:white;
+} */
+
+.button_con{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    
+}
+
+.timefont{
+    font-size:xx-large;
 }
 
